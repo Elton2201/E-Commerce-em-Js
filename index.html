@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Entendendo setores de um E-Commerce</title>
+</head>
+<body>
+  <h1>Aprendendo sobre um E-Commerce</h1>
+
+  <label for="Pesquisa">Digite o setor</label>
+  <input type="text" id="Pesquisar">
+
+  <h3> A Historia das frutas </h3>
+  
+
+  <button onclick="procurar()">Pesquise</button>
+
+  <p id="text"></p>
+  <script>
+  
+    let ecommerce = [
+  { 
+    nome: "Cadastro de Produtos", 
+    historia: "No cadastro de produtos, registramos todas as informações importantes como nome, descrição, categoria e preço. Esse setor também é responsável por inserir novos itens e atualizar dados, garantindo que os clientes tenham sempre acesso a informações corretas e atualizadas." 
+  },
+  { 
+    nome: "Planejamento", 
+    historia: "O setor de planejamento cuida do controle de estoque, da previsão de demanda e da reposição de produtos. Ele garante que os itens estejam disponíveis na hora certa e evita tanto excessos quanto faltas, equilibrando as operações." 
+  },
+  { 
+    nome: "BackOffice", 
+    historia: "O BackOffice é responsável por dar suporte administrativo e operacional, cuidando de processos internos como faturamento, emissão de notas fiscais, atendimento ao cliente e conciliações financeiras. Ele mantém a estrutura funcionando de forma organizada e eficiente." 
+  },
+  { 
+    nome: "Marketing", 
+    historia: "O marketing é o setor responsável por promover os produtos e a marca. Atua em campanhas publicitárias, redes sociais, e-mail marketing e estratégias de vendas, sempre buscando atrair novos clientes e fidelizar os atuais." 
+  }
+];
+
+    function procurar() {
+   
+    let Pesquisa = document.getElementById("Pesquisar").value;
+
+    // Procurando a fruta dentro do array
+    let times = ecommerce.find(ecommerce => ecommerce.nome === Pesquisa);
+
+    // Se achou, mostra as informações
+    if (times) {
+      console.log("A função do cargo é: ", times.historia);
+
+      document.getElementById("text").innerHTML = times.historia
+      
+    } else {
+      console.log("Área não encontrada");
+    }
+    }
+  </script>
+</body>
+</html>
