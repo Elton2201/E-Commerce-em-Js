@@ -1,150 +1,155 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Entendendo setores de um E-Commerce</title>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Entendendo setores de um E-Commerce</title>
 
-  <style>
+    <style>
 
-    /* ...arquivo: index.css... */
+      /* ...arquivo: index.css... */
 
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f6f6f6;
-  color: #222;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 24px;
-  color: #2a7ae4;
-}
-
-label, input, button {
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  margin: 12px auto;
-  font-size: 1rem;
-}
-
-input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background: #2a7ae4;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
-}
-
-button:hover {
-  background: #1e5bb8;
-}
-
-h3 {
-  margin: 24px auto 12px auto;
-  max-width: 400px;
-  color: #444;
-}
-
-p#text {
-  max-width: 400px;
-  margin: 16px auto;
-  font-size: 1.1rem;
-  background: #fff;
-  padding: 12px;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-  body {
-    padding: 8px;
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  h1, h3, label, input, button, p#text {
-    max-width: 98vw;
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f6f6;
+    color: #222;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #2a7ae4;
+  }
+
+  label, input, button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 12px auto;
     font-size: 1rem;
   }
-  button {
+
+  input {
     padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
-}
+
+  button {
+    background: #2a7ae4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background: #1e5bb8;
+  }
+
+  h3 {
+    margin: 24px auto 12px auto;
+    max-width: 400px;
+    color: #444;
+  }
+
+  p#text {
+    max-width: 400px;
+    margin: 16px auto;
+    font-size: 1.1rem;
+    background: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  /* Responsividade */
+  @media (max-width: 600px) {
+    body {
+      padding: 8px;
+    }
+    h1, h3, label, input, button, p#text {
+      max-width: 98vw;
+      font-size: 1rem;
+    }
+    button {
+      padding: 8px;
+    }
+  }
+    </style>
+  </head>
+  <body>
+
+    
   </style>
-</head>
-<body>
-
-  
-</style>
 
 
-  <h1>Aprendendo sobre um E-Commerce</h1>
+    <h1>Aprendendo sobre um E-Commerce</h1>
 
-  <label for="Pesquisa">Digite o setor</label>
-  <input type="text" id="Pesquisar">
+    <label for="Pesquisa">Digite o setor</label>
+    <input type="text" id="Pesquisar">
+    
 
-  <h3> A Historia das frutas </h3>
-  
+    <button onclick="procurar()">Pesquise</button>
 
-  <button onclick="procurar()">Pesquise</button>
-
-  <p id="text"></p>
+    <p id="text"></p>
 
 
-  <p>Observações: no momento as únicas palavras disponiveis para pesquisa são exatamente: Cadastro de Produtos, BackOffice, Marketing, Planejamento.</p>
-  <script>
-  
-    let ecommerce = [
-  { 
-    nome: "Cadastro de Produtos", 
-    historia: "No cadastro de produtos, registramos todas as informações importantes como nome, descrição, categoria e preço. Esse setor também é responsável por inserir novos itens e atualizar dados, garantindo que os clientes tenham sempre acesso a informações corretas e atualizadas." 
-  },
-  { 
-    nome: "Planejamento", 
-    historia: "O setor de planejamento cuida do controle de estoque, da previsão de demanda e da reposição de produtos. Ele garante que os itens estejam disponíveis na hora certa e evita tanto excessos quanto faltas, equilibrando as operações." 
-  },
-  { 
-    nome: "BackOffice", 
-    historia: "O BackOffice é responsável por dar suporte administrativo e operacional, cuidando de processos internos como faturamento, emissão de notas fiscais, atendimento ao cliente e conciliações financeiras. Ele mantém a estrutura funcionando de forma organizada e eficiente." 
-  },
-  { 
-    nome: "Marketing", 
-    historia: "O marketing é o setor responsável por promover os produtos e a marca. Atua em campanhas publicitárias, redes sociais, e-mail marketing e estratégias de vendas, sempre buscando atrair novos clientes e fidelizar os atuais." 
-  }
-];
+    <p>Observações: no momento as únicas palavras disponiveis para pesquisa são exatamente: Cadastro de Produtos, BackOffice, Marketing, Planejamento.</p>
+    <script>
+  let ecommerce = [
+    { 
+      nome: [
+        "CADASTRO DE PRODUTOS", "CADASTRO", "CADASTRAMENTO", "PRODUTOS", 
+        "REGISTRO", "CATÁLOGO", "LISTAGEM", "INSERIR PRODUTO", "EDITAR PRODUTO"
+      ],
+      historia: "No cadastro de produtos, registramos todas as informações importantes como nome, descrição, categoria e preço. Esse setor também é responsável por inserir novos itens e atualizar dados, garantindo que os clientes tenham sempre acesso a informações corretas e atualizadas." 
+    },
+    { 
+      nome: [
+        "PLANEJAMENTO", "PLAN", "ESTOQUE", "GESTÃO DE ESTOQUE", "CONTROLE", 
+        "DEMANDA", "LOGÍSTICA", "REPOSIÇÃO", "SUPRIMENTOS"
+      ],
+      historia: "O setor de planejamento cuida do controle de estoque, da previsão de demanda e da reposição de produtos. Ele garante que os itens estejam disponíveis na hora certa e evita tanto excessos quanto faltas, equilibrando as operações." 
+    },
+    { 
+      nome: [
+        "BACKOFFICE", "ADMINISTRATIVO", "SUPORTE", "FATURAMENTO", 
+        "NOTA FISCAL", "ATENDIMENTO", "CONCILIAÇÃO", "PROCESSOS INTERNOS"
+      ],
+      historia: "O BackOffice é responsável por dar suporte administrativo e operacional, cuidando de processos internos como faturamento, emissão de notas fiscais, atendimento ao cliente e conciliações financeiras. Ele mantém a estrutura funcionando de forma organizada e eficiente." 
+    },
+    { 
+      nome: [
+        "MARKETING", "DIVULGAÇÃO", "PROPAGANDA", "PUBLICIDADE", "PROMOÇÃO", 
+        "CAMPANHA", "REDES SOCIAIS", "EMAIL MARKETING", "ANÚNCIO", "VENDAS"
+      ], 
+      historia: "O marketing é o setor responsável por promover os produtos e a marca. Atua em campanhas publicitárias, redes sociais, e-mail marketing e estratégias de vendas, sempre buscando atrair novos clientes e fidelizar os atuais." 
+    }
+  ];
 
-    function procurar() {
-   
-    let Pesquisa = document.getElementById("Pesquisar").value;
+  function procurar() {
+    let Pesquisa = document.getElementById("Pesquisar").value.toUpperCase();
 
-    // Procurando a fruta dentro do array
-    let times = ecommerce.find(ecommerce => ecommerce.nome === Pesquisa);
+    
+    let times = ecommerce.find(item => item.nome.includes(Pesquisa));
 
-    // Se achou, mostra as informações
     if (times) {
-      console.log("A função do cargo é: ", times.historia);
-
-      document.getElementById("text").innerHTML = times.historia
-      
+      document.getElementById("text").innerHTML = times.historia;
     } else {
-      console.log("Área não encontrada");
+      document.getElementById("text").innerHTML = "Área não encontrada.";
     }
-    }
-  </script>
-</body>
-</html>
+  }
+</script>
+
+  </body>
+  </html>
