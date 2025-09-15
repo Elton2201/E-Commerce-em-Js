@@ -9,83 +9,119 @@
 
   /* Reset básico */
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f6f6;
+  color: #222;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2a7ae4;
+  font-size: 1.8rem;
+}
+
+h3 {
+  margin: 24px auto 12px auto;
+  max-width: 400px;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+/* Campos e botões */
+label, input, button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 12px auto;
+  font-size: 1rem;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Botão */
+button {
+  background: #2a7ae4;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.1s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #1e5bb8;
+  transform: scale(1.02);
+}
+
+/* Texto de resposta */
+p#text {
+  max-width: 400px;
+  margin: 16px auto;
+  font-size: 1.1rem;
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Observações */
+p {
+  margin: 12px auto;
+  max-width: 400px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 600px) {
   body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f6f6f6;
-    color: #222;
-    padding: 20px;
+    padding: 12px;
   }
 
   h1 {
-    text-align: center;
-    margin-bottom: 24px;
-    color: #2a7ae4;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
   }
 
-  label, input, button {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    margin: 12px auto;
+  label, input, button, p#text, p {
+    max-width: 100%;
     font-size: 1rem;
   }
 
   input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    font-size: 1rem;
+    padding: 10px;
   }
 
   button {
-    background: #2a7ae4;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.2s;
-  }
-
-  button:hover {
-    background: #1e5bb8;
-  }
-
-  h3 {
-    margin: 24px auto 12px auto;
-    max-width: 400px;
-    color: #444;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 10px;
   }
 
   p#text {
-    max-width: 400px;
-    margin: 16px auto;
-    font-size: 1.1rem;
-    background: #fff;
+    font-size: 1rem;
     padding: 12px;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   }
-
-  /* Responsividade */
-  @media (max-width: 600px) {
-    body {
-      padding: 8px;
-    }
-    h1, h3, label, input, button, p#text {
-      max-width: 98vw;
-      font-size: 1rem;
-    }
-    button {
-      padding: 8px;
-    }
-  }
-    </style>
+} </style>
   </head>
   <body>
 
